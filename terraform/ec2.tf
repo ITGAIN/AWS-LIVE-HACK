@@ -18,6 +18,15 @@ resource "aws_security_group" "hacking_scenario_secgroup"{
     description = "SSH access"
     cidr_blocks = ["0.0.0.0/0"]
   }
+
+  ingress{
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    description = "lambda access"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
     egress{
     from_port   = 1
     to_port     = 65535
