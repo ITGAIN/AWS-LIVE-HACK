@@ -16,7 +16,7 @@ provider "aws" {
 locals {
   region          = "eu-central-1"
   tags = {
-    Owner         = "FIX ME"
+    Owner         = "FIX ME" #FIXME
     Purpose       = "Presentation"
     Deployment    = "Terraform"
   }
